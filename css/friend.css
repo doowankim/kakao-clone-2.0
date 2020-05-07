@@ -6,11 +6,48 @@
 
 .friend .friend__avatar {
     width: 50px;
-    border-radius: 35%; /* 이 경우에는 avatar 크기가 바뀔거라서 px로 줄 수 없다. 따라서 상대적인 radius가 필요하다 */
+    border-radius: 38%; /* 이 경우에는 avatar 크기가 바뀔거라서 px로 줄 수 없다. 따라서 상대적인 radius가 필요하다 */
 }
 
 /* friend__avatar와 g-avatar class를 동시에 적용 (띄어쓰기 x) */
 /* 띄어쓰기를 하면 friend__avatar 안에 g-avatar class를 의미 */
 .friend__avatar.g-avatar { 
-    /* width: 70px; */
+    width: 70px;
+}
+
+.friend__avatar.m-avatar { 
+    width: 60px;
+}
+
+.friend .friend__column {
+    display: flex;
+    align-items: center;
+}
+
+.friend .friend__avatar {
+    margin-right: 15px;
+}
+
+.friend__content .friend__name {
+    display: block; /* 항상 위쪽에 있어야 하므로*/
+    margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+    opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+    font-size: 14px;
+}
+
+.friend__content .friend__status {
+    font-size: 12px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+    font-size: 12px;
 }
