@@ -1,5 +1,14 @@
 .chats-body {
-    padding: 0;
+    padding: 10px 0px;
+    padding-top: 100px;
+}
+
+.header-wrapper {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: white;
 }
 
 .chats-body .header,
@@ -7,9 +16,9 @@
     padding: 0px 20px;
 }
 
-.chat-screen {
+.chats-body {
     background-image: url(../images/chatBg3.png);
-    min-height: 100vh; /*viewport(screen) height에 100% 높이를 주는 것 */
+    min-height: 1000vh; /*viewport(screen) height에 100% 높이를 주는 것 */
 }
 
 .chat__write {
